@@ -2,13 +2,15 @@ package org.password.data.models;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-
+@Document
 public class User {
     @Id
-    private String Id;
+    private String id;
     private String name;
     private String userName;
     private String password;
+    private String email;
 }
